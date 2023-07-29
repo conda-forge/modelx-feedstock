@@ -22,6 +22,7 @@ requirements:
     - asttokens
     - networkx >=2.0
     - python >=3.6
+    - libcst
 
 test:
   imports:
