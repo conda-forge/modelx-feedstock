@@ -1,5 +1,5 @@
 {% set name = "modelx" %}
-{% set version = "0.28.0" %}
+{% set version = "0.28.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/modelx-{{ version }}.tar.gz
-  sha256: 91af1db5d76f121a4f35c21044741afcdebd4bbba6a19737bf55a591f123dbe4
+  sha256: 6e5bfde9947197139547d0c0f0a9286a417f6abce85622e0d73687c1af93aec9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
